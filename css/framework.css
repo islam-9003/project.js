@@ -1,0 +1,294 @@
+/* start box */
+.d-flex{
+    display: flex;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.d-grid{
+    display: grid;
+} 
+.gap-20{
+    gap: 20px;
+}
+.d-block{
+    display: block;
+}
+@media (max-width: 767px) {
+    .block-mobile{
+        display: block;
+    }
+    .hide-mobaile{
+        display: none;
+        
+}}
+/* end box */
+/* start padding + margin */
+
+.p-10{
+    padding: 10px;
+}
+.p-20 {
+    padding: 20px;
+}
+.p-15{
+    padding: 15px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.m-0{
+    margin: 0;
+}
+.m-20{
+    margin: 20px;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mt-25{
+    margin-top: 25px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mr-15{
+    margin-right: 15px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.b-none{
+    border: none;
+}
+.border-ccc{
+    border: 1px solid #ccc;
+}
+.border-eee{
+    border: 1px solid #eee;
+}
+/* end padding + margin */
+/* start color */
+.bg-white{
+    background-color: white;
+}
+.bg-eee{
+    background-color: #eee;
+}
+.bg-blue{
+    background-color: #0075ff;
+}
+.bg-orange{
+    background-color: #f59e0b;
+}
+.bg-green{
+    background-color: #22c55e;
+}
+.bg-red{
+    background-color: #f44336;
+}
+.bg-grey{
+    color: #888;
+}
+.c-black{
+    color: black;
+}
+.c-grey{
+    color: #888;
+}
+.c-white{
+    color: white;
+}
+.c-blue{
+  color: #0075ff;
+}
+.c-orange{
+    color: #f59e0b;
+}
+.c-green{
+    color: #22c55e;
+}
+.c-red{
+    color: #f44336;
+}
+/* end color */
+/* start position */
+.p-relative{
+    position: relative;
+}
+.p-absolute{
+    position: absolute;
+}
+/* end position */
+/* start font */
+.txt-c{
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .txt-c-mobile{
+        text-align: center;
+    }
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.fw-bold{
+    font-weight: bold;
+}
+/* end font */
+/* start border */
+.rad-6{
+    border-radius: 6px;
+}
+.rad-10{
+    border-radius: 10px;
+}
+.red-half{
+    border-radius: 50%;
+}
+/* end border */
+/* start width & height */
+.w-full{
+    width: 100%;
+}
+.w-fit{
+    width: fit-content;
+}
+.h-full{
+    height: 100%;
+}
+.w-100{
+    width: 100px;
+}
+.h-100{
+    height: 100px;
+}
+/* end width *
+/* start components */
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.between-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+/* end components */
+/* strt toggle checkbox */
+
+/* <div class="setting-page">
+<label>
+    <input class="toggle-checkbox" type="checkbox" checked>
+    <div class="toggle-switch "></div>
+</label>
+</div> */
+
+.toggle-checkbox{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-switch::before{
+    font-family: "Font Awesome 6 free";
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch{
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
+/* end toggle checkbox */

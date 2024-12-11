@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+        <style>
+            .container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .form{
+                margin-top: 20px;
+                background-color: #eee;
+                display: flex;
+                padding: 15px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+            }
+            .input{
+            padding: 11px;
+            width: 500px;
+            outline: none;
+            border: none;
+            border-radius: 6px;
+            }
+            .add{
+                color: white;
+                background-color: red;
+                padding: 8px;
+                font-size: 20px;
+                border: none;
+                font-weight: bold;
+                border-radius: 6px;
+                margin-left: 10px;
+                cursor: pointer;
+            }
+            .tasks{
+                margin-top: 25px;
+                background-color: #eee;
+                width: 630px;
+                padding: 15px;
+                border-radius: 6px;
+            }
+            .task{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                padding: 10px;
+                border-radius: 6px;
+                margin-bottom: 15px;
+                font-size: 25px;
+                border: 1px solid #ccc;
+            }
+            .done{
+                background-color: #8f8b8b1c;
+            }
+            .del{
+                font-weight: bold;
+                font-size: 15px;
+                background-color: red;
+                color: white;
+                padding: 2px 6px;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <input type="text" class="input">
+                <input type="submit" class="add" value="Add Task">
+            </div>
+            <div class="tasks"></div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
